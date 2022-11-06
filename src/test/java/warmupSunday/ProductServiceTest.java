@@ -9,6 +9,7 @@ class ProductServiceTest {
     @Test
     void calculateTotalProductsPrice() {
 
+//given..
         //given - duotieji duomenys testui
         Product product1 = new Product("Bread", 1.24, 3);
         Product product2 = new Product("Milk", 2.05, 1);
@@ -20,7 +21,6 @@ class ProductServiceTest {
         double actualProductsTotal = productService.calculateTotalProductsPrice(products);
         // then - rezultatas kokiu tikemis  ir ka gaunam naudodami metoda
         assertEquals(21.27,actualProductsTotal);
-
     }
 
     @Test
